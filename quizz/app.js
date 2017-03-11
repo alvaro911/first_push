@@ -130,10 +130,11 @@ $(document).ready(()=>{
         $('.btn_hidden').removeClass('btn_hidden')
         $('.counter').css('display', 'flex')
         if($this.val() === 'ans'){
-          $this.prev().css('background-color','#bada55')
+          $this.prev().css('background-color','#23bb97')
           $('.correct').css('display','block')
           $('.right').text(right+=1)
         }else{
+          $this.prev().css('background-color', '#e35138');
           $('.incorrect').css('display','block')
           $('.wrong').text(wrong+=1)
         }
